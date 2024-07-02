@@ -1,0 +1,67 @@
+
+row = prompt("enter a rows: ")
+for( i = 1 ; i<=row;i++)
+{
+    s = "",beta = 97
+    for( j = 1;j<=i;j++ )
+    {
+        if( j%2 == 0 )
+        {
+            s = s + String.fromCharCode(beta).toUpperCase()+" "
+            beta++
+        }
+        else{
+            s = s+String.fromCharCode(beta)+ " "
+            beta++
+        }
+        
+    }
+    console.log(s)
+}
+
+
+alpha = 65
+
+row = 5 // prompt("enter a rows: ")
+
+for( i = 1 ; i<=row;i++)
+{
+s = ""
+    for( j = 1;j<=i;j++ )
+    {
+        temp = alpha
+         if(temp%2 == 1)
+         {
+             s = s+ String.fromCharCode(alpha)+ " ";
+             alpha++;
+         }
+         else
+         {
+             s = s+ String.fromCharCode(alpha).toLowerCase()+ " ";
+             alpha++;
+         }
+
+    }
+    
+    console.log(s)
+}
+
+
+o/p;
+
+
+
+enter a rows: 5
+a 
+a B 
+a B c 
+a B c D 
+a B c D e 
+
+
+enter a rows : 5
+A 
+b C 
+d E f 
+G h I j 
+K l M n O 
